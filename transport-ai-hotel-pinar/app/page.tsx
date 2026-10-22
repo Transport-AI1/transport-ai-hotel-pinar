@@ -8,7 +8,6 @@ import {
   Check,
   ChevronDown,
   Menu,
-  MessageCircle,
   X,
 } from "lucide-react";
 import { useState } from "react";
@@ -580,16 +579,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Voiceflow: se conserva la integración existente */}
-      <button
-        onClick={openVoiceflowChat}
-        aria-label="Abrir asistente virtual"
-        className="fixed bottom-5 right-5 z-30 flex items-center gap-3 rounded-full bg-[#303c2e] px-5 py-4 text-sm text-white shadow-xl transition hover:bg-[#465541]"
-      >
-        <MessageCircle size={19} />
-        <span>¿Te ayudo?</span>
-        <span className="h-2 w-2 rounded-full bg-[#c7d6ad]" />
-      </button>
     </main>
   );
 }
