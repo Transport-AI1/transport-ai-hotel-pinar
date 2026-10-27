@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect } from "react";
@@ -35,7 +34,7 @@ export default function VoiceflowWidget() {
 
       window.voiceflow.chat.load({
         verify: {
-          projectID: "6ad9ebd4d629eb194f626809",
+          projectID: "6ae0a2f3962ce80b363e1a8c",
         },
         url: "https://general-runtime.voiceflow.com",
         voice: {
@@ -54,7 +53,9 @@ export default function VoiceflowWidget() {
       if (window.voiceflow?.chat) {
         loadChat();
       } else {
-        existingScript.addEventListener("load", loadChat, { once: true });
+        existingScript.addEventListener("load", loadChat, {
+          once: true,
+        });
       }
 
       return () => {
